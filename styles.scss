@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+html {
+  height: 100vh;
+}
+body {
+  position: fixed;
+  background-image: url("./img-waterfall.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  width: 100vw;
+}
+
+.date,
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+}
+
+.main-container {
+  height: 30vh;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 5em;
+  }
+  .date {
+    font-size: 1.25em;
+    margin-top: 25px;
+    letter-spacing: 2px;
+  }
+  .time {
+    font-size: 7.5em;
+  }
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 1.6em;
+    font-weight: 300;
+    width: 30vw;
+    position: relative;
+    left: 45%;
+    transform: translate(-50%);
+  }
+  button {
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    margin-left: 25px;
+    font-weight: 100;
+    cursor: pointer;
+    position: relative;
+    left: 25%;
+    transform: translate(-50%);
+    outline: none;
+  }
+  .list {
+    width: 60vw;
+    margin-top: 50px;
+    margin-left: 25px;
+    list-style: none;
+    .list-item {
+      border-bottom: 1px solid white;
+      font-size: 2em;
+      font-weight: 300;
+      display: flex;
+      justify-content: space-between;
+      .item {
+        font-weight: 200;
+        margin-left: 20px;
+      }
+      .icons {
+        display: flex;
+        img {
+          height: 1em;
+          margin-right: 20px;
+          cursor: pointer;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+.item,
+.close {
+  cursor: pointer;
+}

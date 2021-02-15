@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  position: fixed;
+  background-image: url("./img-waterfall.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  width: 100vw;
+}
+
+.date,
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 200;
+}
+
+.main-container {
+  height: 30vh;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-container h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 5em;
+}
+
+.main-container .date {
+  font-size: 1.25em;
+  margin-top: 25px;
+  letter-spacing: 2px;
+}
+
+.main-container .time {
+  font-size: 7.5em;
+}
+
+.main-container input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  font-size: 1.6em;
+  font-weight: 300;
+  width: 30vw;
+  position: relative;
+  left: 45%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.main-container button {
+  background: transparent;
+  border: none;
+  font-size: 1.5em;
+  margin-left: 25px;
+  font-weight: 100;
+  cursor: pointer;
+  position: relative;
+  left: 25%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  outline: none;
+}
+
+.main-container .list {
+  width: 60vw;
+  margin-top: 50px;
+  margin-left: 25px;
+  list-style: none;
+}
+
+.main-container .list .list-item {
+  border-bottom: 1px solid white;
+  font-size: 2em;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .list .list-item .item {
+  font-weight: 200;
+  margin-left: 20px;
+}
+
+.main-container .list .list-item .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .list .list-item .icons img {
+  height: 1em;
+  margin-right: 20px;
+  cursor: pointer;
+  text-align: end;
+}
+
+.item,
+.close {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
